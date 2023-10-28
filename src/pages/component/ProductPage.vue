@@ -77,6 +77,8 @@ export default {
   width: 36px;
   height: 36px;
   transition: background-color 0.3s;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 .size-bordered:hover {
   background-color: $primary;

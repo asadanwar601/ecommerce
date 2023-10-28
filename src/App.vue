@@ -3,9 +3,13 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
+import useAppIcons from "src/composables/use-appIcons";
 
 export default defineComponent({
-  name: 'App'
-})
+  name: "App",
+  setup() {
+    useAppIcons();
+  },
+});
 </script>

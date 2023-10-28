@@ -45,3 +45,9 @@ quasar build
 ### Customize the configuration
 
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+
+# Different font styles are used.
+
+# Icons are used from images and svg both can find icon folder in src/assets/icons and public/svg
+
+# All sub-pages of indexpage are distributed and are kept in component directory

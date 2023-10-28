@@ -43,7 +43,12 @@
     <SubProductPage />
     <!--  banner-3 -->
     <img alt="banner" src="~assets/banner/banner_3.png" class="full-width" />
+    <!-- offer -->
     <OfferPage />
+    <!-- cards -->
+    <CustomerSupport />
+    <SubscribePage />
+    <FooterPage />
   </q-page>
 </template>
 
@@ -55,6 +60,10 @@ import ProductPage from "./component/ProductPage.vue";
 import SubProductPage from "./component/SubProductPage.vue";
 import TitlePage from "./component/TitlePage.vue";
 import OfferPage from "./component/OfferPage.vue";
+import CustomerSupport from "./component/CustomerSupport.vue";
+import SubscribePage from "./component/SubscribePage.vue";
+import FooterPage from "./component/FooterPage.vue";
+
 export default defineComponent({
   name: "IndexPage",
   components: {
@@ -64,6 +73,9 @@ export default defineComponent({
     TitlePage,
     SubProductPage,
     OfferPage,
+    CustomerSupport,
+    SubscribePage,
+    FooterPage,
   },
   setup() {},
 });

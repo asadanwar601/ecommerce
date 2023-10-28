@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .bg-separator {
   background: #ffc7d1 !important;
 }

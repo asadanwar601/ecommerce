@@ -1,7 +1,7 @@
 <template>
   <div class="row justify-center q-gutter-md q-my-lg">
     <div
-      class="col-md-3 col-sm-12"
+      class="col-md-3 col-sm-4 col-12"
       v-for="item in categories"
       :key="item.index"
     >

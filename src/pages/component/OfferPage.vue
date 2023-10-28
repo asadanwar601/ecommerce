@@ -1,14 +1,14 @@
 <template>
   <div class="row justify-center q-gutter-x-md q-my-xl">
     <div
-      :class="`box col-4 bg-${item.bg_color} text-center q-gutter-y-lg q-pa-xl`"
+      :class="`box col-md-4 col-12  bg-${item.bg_color} text-center q-gutter-y-lg q-pa-xl`"
       v-for="item in offer"
       :key="item.index"
     >
       <q-img
         :src="`src/assets/sub-categories-3/${item.imgSrc}`"
         alt="img"
-        style="width: 172px; height: 172px"
+        style="max-width: 172px; max-height: 172px"
         class="q-my-lg"
       />
       <div class="text-h4 q-my-lg">Hurry Up!</div>
@@ -48,11 +48,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .box {
-//   width: 548px;
-//   height: 652px;
-// }
-
 .bg-first-color {
   background: #cccea7 !important;
 }
