@@ -14,7 +14,10 @@
           @click="leftDrawer = !leftDrawer"
         />
 
-        <q-toolbar-title class="text-dark text-center">
+        <q-toolbar-title
+          class="text-dark text-center cursor-pointer"
+          @click="$router.push({ name: 'index' })"
+        >
           Logo Here
         </q-toolbar-title>
 
@@ -31,6 +34,18 @@
     <q-drawer v-model="leftDrawer" bordered :width="200">
       <q-scroll-area class="fit">
         <div class="q-pa-sm">
+          <div
+            class="cursor-pointer text-bold q-pl-lg q-mx-lg q-mt-xl"
+            @click="$router.push({ name: 'index' })"
+          >
+            Index Page
+          </div>
+          <div
+            class="cursor-pointer text-bold q-pl-lg q-mx-lg q-mt-md"
+            @click="$router.push({ name: 'crud' })"
+          >
+            Crud Page
+          </div>
           <div v-for="n in 10" :key="n">
             <div
               class="text-dark text-bold q-pl-lg q-mx-lg q-mt-md cursor-pointer"
