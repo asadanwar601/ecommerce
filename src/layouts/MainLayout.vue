@@ -21,7 +21,11 @@
           Logo Here
         </q-toolbar-title>
 
-        <div v-for="icon in icons" :key="icon.index" class="text-dark q-pr-md">
+        <div
+          v-for="icon in icons"
+          :key="icon.index"
+          class="text-dark q-pr-md gt-xs"
+        >
           <img
             :alt="icon"
             :src="`src/assets/icon/${icon}`"
@@ -46,12 +50,16 @@
           >
             Crud Page
           </div>
-          <div v-for="n in 10" :key="n">
-            <div
-              class="text-dark text-bold q-pl-lg q-mx-lg q-mt-md cursor-pointer"
-            >
-              Nav Menu {{ n }}
-            </div>
+          <div
+            v-for="icon in icons"
+            :key="icon.index"
+            class="text-dark text-center q-pr-md q-my-md"
+          >
+            <img
+              :alt="icon"
+              :src="`src/assets/icon/${icon}`"
+              class="q-pl-md cursor-pointer"
+            />
           </div>
         </div>
       </q-scroll-area>

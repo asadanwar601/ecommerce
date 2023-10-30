@@ -1,7 +1,7 @@
 <template>
   <q-separator class="q-my-xl" />
   <div class="row q-mx-xl q-mt-xl">
-    <div class="col-4 col-sm-12 col-xs-12">
+    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12">
       <div class="text-subtitle1 q-pa-sm text-family">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -23,19 +23,19 @@
         <q-icon name="app:pinterest" size="50px" />
       </div>
     </div>
-    <div class="col-2 q-gutter-y-sm col-sm-12 col-xs-12">
+    <div class="col-md-2 col-lg-2 col-xl-2 q-gutter-y-sm col-sm-12 col-xs-12">
       <div class="text-h6 text-brand q-mb-lg">ONLINE SHOPPING</div>
       <div v-for="item in categories" :key="item.index">
         <div class="text-family">{{ item.name }}</div>
       </div>
     </div>
-    <div class="col-3 q-gutter-y-sm col-sm-12 col-xs-12">
+    <div class="col-md-3 col-lg-3 col-xl-3 q-gutter-y-sm col-sm-12 col-xs-12">
       <div class="text-h6 text-brand q-mb-lg">CUSTOMER POLICIES</div>
       <div v-for="item in pages" :key="item.index">
         <div class="text-family">{{ item }}</div>
       </div>
     </div>
-    <div class="col-3 q-gutter-y-sm col-sm-12 col-xs-12">
+    <div class="col-md-3 col-lg-3 col-xl-3 q-gutter-y-sm col-sm-12 col-xs-12">
       <div class="text-h6 text-brand q-mb-lg">STORE INFORMATION</div>
       <div v-for="item in info" :key="item.index" class="row">
         <div class="text-family">
